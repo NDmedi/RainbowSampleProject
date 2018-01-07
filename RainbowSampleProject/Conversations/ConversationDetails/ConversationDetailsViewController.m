@@ -9,8 +9,7 @@
 #import "ConversationDetailsViewController.h"
 #import "Rainbow/Rainbow.h"
 #import <CoreLocation/CoreLocation.h>
-@import AVFoundation;
-@import AVKit;
+
 @interface ConversationDetailsViewController ()
 
 @end
@@ -21,9 +20,8 @@ BOOL isFetchMoreMessages;
 MessagesBrowser *messagesBrowser;
 UIImage* image;
 
-
 - (void)viewDidLoad {
-    [super viewDidLoad];//comment
+    [super viewDidLoad];
     currentUser = [[ServicesManager sharedInstance] myUser];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationController.navigationBar
@@ -306,7 +304,6 @@ UIImage* image;
          NSLog(@"total byte expected to send  : %f",totalBytesExpectedToSend);
          dispatch_async(dispatch_get_main_queue(), ^{
              [ self.collectionView reloadData];
-             
          });
          
      }];
@@ -342,7 +339,6 @@ UIImage* image;
     
     [sheet showFromToolbar:self.inputToolbar];
 }
-//function to handle actionSheet press btn
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == actionSheet.cancelButtonIndex) {
@@ -374,7 +370,6 @@ UIImage* image;
     }
     
     
-    //[self finishSendingMessageAnimated:YES];
 }
 #pragma mark - imagePicker Methods
 
@@ -530,7 +525,6 @@ UIImage* image;
 
 #pragma mark - GetMediaJSQMessage
 -(JSQMessage*) getJSQMessage:(Message*) message withUserId:(NSString*)userId withDisplayName:(NSString*)name {
-  NSLog(@"retID %@ %@",userId,name);
   JSQMessage* returnedMsg;
   if(message.attachment!=nil) {
     NSArray* type;

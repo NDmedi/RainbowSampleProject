@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.555218"
+            timestampString = "537020247.285261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "506"
-            endingLineNumber = "506"
+            startingLineNumber = "501"
+            endingLineNumber = "501"
             landmarkName = "-collectionView:header:didTapLoadEarlierMessagesButton:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.555745"
+            timestampString = "537020247.285835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "491"
-            endingLineNumber = "491"
+            startingLineNumber = "486"
+            endingLineNumber = "486"
             landmarkName = "-itemsBrowser:didReceiveItemsAddedEvent:"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.556121"
+            timestampString = "537020247.2862951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "ConversationDetailsViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.556464"
+            timestampString = "537020247.286671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "487"
-            endingLineNumber = "487"
+            startingLineNumber = "482"
+            endingLineNumber = "482"
             landmarkName = "-itemsBrowser:didReorderCacheItemsAtIndexes:toIndexes:"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.556819"
+            timestampString = "537020247.287055"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "-senderId"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.557142"
+            timestampString = "537020247.287412"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "-scrollToBottomAnimated:"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.557478"
+            timestampString = "537020247.287775"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "-scrollToBottomAnimated:"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.557799"
+            timestampString = "537020247.288128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "425"
-            endingLineNumber = "425"
+            startingLineNumber = "420"
+            endingLineNumber = "420"
             landmarkName = "-itemsBrowser:didAddCacheItems:atIndexes:"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.558128"
+            timestampString = "537020247.28854"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.558442"
+            timestampString = "537020247.289042"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "517"
-            endingLineNumber = "517"
+            startingLineNumber = "512"
+            endingLineNumber = "512"
             landmarkName = "-collectionView:header:didTapLoadEarlierMessagesButton:"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.558764"
+            timestampString = "537020247.28966"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "463"
-            endingLineNumber = "463"
+            startingLineNumber = "458"
+            endingLineNumber = "458"
             landmarkName = "-itemsBrowser:didAddCacheItems:atIndexes:"
             landmarkType = "7">
             <Locations>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.559278"
+            timestampString = "537020247.290153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "429"
-            endingLineNumber = "429"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
             landmarkName = "-itemsBrowser:didAddCacheItems:atIndexes:"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.559818"
+            timestampString = "537020247.290537"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "255"
-            endingLineNumber = "255"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.560249"
+            timestampString = "537020247.290899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "438"
-            endingLineNumber = "438"
+            startingLineNumber = "433"
+            endingLineNumber = "433"
             landmarkName = "-itemsBrowser:didAddCacheItems:atIndexes:"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.560608"
+            timestampString = "537020247.291266"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "536"
-            endingLineNumber = "536"
+            startingLineNumber = "530"
+            endingLineNumber = "530"
             landmarkName = "-getJSQMessage:withUserId:withDisplayName:"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.560963"
+            timestampString = "537020247.291641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "539"
-            endingLineNumber = "539"
+            startingLineNumber = "533"
+            endingLineNumber = "533"
             landmarkName = "-getJSQMessage:withUserId:withDisplayName:"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,23 +330,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.561442"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "540"
-            endingLineNumber = "540"
-            landmarkName = "-getJSQMessage:withUserId:withDisplayName:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.561794"
+            timestampString = "537020247.292009"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "534"
@@ -362,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.562135"
+            timestampString = "537020247.292375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "-collectionView:didTapMessageBubbleAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.562467"
+            timestampString = "537020247.29273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "-collectionView:didTapMessageBubbleAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,7 +378,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.5627871"
+            timestampString = "537020247.293115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "-collectionView:didTapMessageBubbleAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
+            timestampString = "537020247.2934639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "172"
@@ -410,7 +410,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.563112"
+            timestampString = "537020247.2938139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "174"
@@ -422,31 +422,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.563424"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "-collectionView:didTapMessageBubbleAtIndexPath:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.563746"
+            timestampString = "537020247.2941591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
+            startingLineNumber = "316"
+            endingLineNumber = "316"
             landmarkName = "-sendMessage:withFile:withMsgType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.564078"
+            timestampString = "537020247.2945139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385"
+            startingLineNumber = "380"
+            endingLineNumber = "380"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -474,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.564433"
+            timestampString = "537020247.2948689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "384"
-            endingLineNumber = "384"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -490,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.564764"
+            timestampString = "537020247.295385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "-collectionView:messageDataForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -506,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.565089"
+            timestampString = "537020247.295746"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "-collectionView:messageDataForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -522,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.5654089"
+            timestampString = "537020247.296098"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "-actionSheet:didDismissWithButtonIndex:"
             landmarkType = "7">
          </BreakpointContent>
@@ -538,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.565725"
+            timestampString = "537020247.296454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "307"
-            endingLineNumber = "307"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
             landmarkName = "-sendMessage:withFile:withMsgType:"
             landmarkType = "7">
             <Locations>
@@ -553,12 +537,12 @@
                   symbolName = "__70-[ConversationDetailsViewController sendMessage:withFile:withMsgType:]_block_invoke.222"
                   moduleName = "RainbowSampleProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asaltech/Documents/RainbowSampleProject%20copy/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-                  timestampString = "537002335.7111551"
+                  urlString = "file:///Users/asaltech/RainbowSampleProject/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
+                  timestampString = "537020291.209143"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "307"
-                  endingLineNumber = "307"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
                   offsetFromSymbolStart = "139">
                </Location>
                <Location
@@ -568,12 +552,12 @@
                   symbolName = "__70-[ConversationDetailsViewController sendMessage:withFile:withMsgType:]_block_invoke_2"
                   moduleName = "RainbowSampleProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asaltech/Documents/RainbowSampleProject%20copy/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-                  timestampString = "537002335.714635"
+                  urlString = "file:///Users/asaltech/RainbowSampleProject/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
+                  timestampString = "537020291.211705"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "307"
-                  endingLineNumber = "307"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -586,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.566044"
+            timestampString = "537020247.296892"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
             landmarkName = "-sendMessage:withFile:withMsgType:"
             landmarkType = "7">
             <Locations>
@@ -601,12 +585,12 @@
                   symbolName = "-[ConversationDetailsViewController sendMessage:withFile:withMsgType:]"
                   moduleName = "RainbowSampleProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asaltech/Documents/RainbowSampleProject%20copy/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-                  timestampString = "537002335.722548"
+                  urlString = "file:///Users/asaltech/RainbowSampleProject/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
+                  timestampString = "537020291.219795"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "298"
-                  endingLineNumber = "298"
+                  startingLineNumber = "296"
+                  endingLineNumber = "296"
                   offsetFromSymbolStart = "115">
                </Location>
                <Location
@@ -616,12 +600,12 @@
                   symbolName = "__70-[ConversationDetailsViewController sendMessage:withFile:withMsgType:]_block_invoke"
                   moduleName = "RainbowSampleProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asaltech/Documents/RainbowSampleProject%20copy/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-                  timestampString = "537002335.726285"
+                  urlString = "file:///Users/asaltech/RainbowSampleProject/RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
+                  timestampString = "537020291.222145"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "298"
-                  endingLineNumber = "298"
+                  startingLineNumber = "296"
+                  endingLineNumber = "296"
                   offsetFromSymbolStart = "19">
                </Location>
             </Locations>
@@ -634,11 +618,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.566363"
+            timestampString = "537020247.297534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "397"
-            endingLineNumber = "397"
+            startingLineNumber = "392"
+            endingLineNumber = "392"
             landmarkName = "-imagePickerControllerDidCancel:"
             landmarkType = "7">
          </BreakpointContent>
@@ -650,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.566854"
+            timestampString = "537020247.298033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
             landmarkName = "-sendMessage:withFile:withMsgType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -662,15 +646,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
-            timestampString = "537004024.567343"
+            timestampString = "537020247.298413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RainbowSampleProject/Conversations/ConversationDetails/ConversationDetailsViewController.m"
+            timestampString = "537020247.299256"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
