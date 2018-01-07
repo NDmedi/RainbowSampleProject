@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4601CE291FE70B160002B861 /* ConversationDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4601CE271FE70B160002B861 /* ConversationDetailsViewController.xib */; };
+		4602AFBB1FE651F600C79166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFBA1FE651F600C79166 /* AppDelegate.m */; };
+		4602AFBE1FE651F600C79166 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFBD1FE651F600C79166 /* ViewController.m */; };
+		4602AFC11FE651F600C79166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFBF1FE651F600C79166 /* Main.storyboard */; };
+		4602AFC31FE651F600C79166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFC21FE651F600C79166 /* Assets.xcassets */; };
+		4602AFC61FE651F600C79166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFC41FE651F600C79166 /* LaunchScreen.storyboard */; };
+		4602AFC91FE651F600C79166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFC81FE651F600C79166 /* main.m */; };
+		4602AFD51FE652C900C79166 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFD31FE652C900C79166 /* TabBarController.m */; };
+		4602AFDF1FE6532000C79166 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFDC1FE6532000C79166 /* ContactsViewController.xib */; };
+		4602AFE01FE6532000C79166 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFDD1FE6532000C79166 /* ContactsViewController.m */; };
+		4602AFE51FE6533600C79166 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFE31FE6533600C79166 /* ContactsTableViewCell.m */; };
+		4602AFE61FE6533600C79166 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFE41FE6533600C79166 /* ContactsTableViewCell.xib */; };
+		4602AFEA1FE6535300C79166 /* ConversationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFE71FE6535200C79166 /* ConversationsViewController.m */; };
+		4602AFEB1FE6535300C79166 /* ConversationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFE91FE6535300C79166 /* ConversationsViewController.xib */; };
+		4602AFEE1FE6577400C79166 /* icons8-contacts-filled-51.png in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFED1FE6577400C79166 /* icons8-contacts-filled-51.png */; };
+		4602AFF31FE664B200C79166 /* ConversationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602AFF11FE664B200C79166 /* ConversationTableViewCell.m */; };
+		4602AFF41FE664B200C79166 /* ConversationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFF21FE664B200C79166 /* ConversationTableViewCell.xib */; };
+		4602B00E1FE6BB1700C79166 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602B00C1FE6BB1700C79166 /* ContactDetailsViewController.m */; };
+		4602B00F1FE6BB1700C79166 /* ContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4602B00D1FE6BB1700C79166 /* ContactDetailsViewController.xib */; };
+		464C9FEC1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464C9FEB1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m */; };
+		4693DC591FE7B7E300A5DF39 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4693DC571FE7B7E100A5DF39 /* WebRTC.framework */; };
+		4693DC5A1FE7B7E300A5DF39 /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4693DC581FE7B7E200A5DF39 /* Rainbow.framework */; };
+		4693DC5B1FE7B81D00A5DF39 /* Rainbow.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4693DC581FE7B7E200A5DF39 /* Rainbow.framework */; };
+		4693DC5C1FE7B81D00A5DF39 /* WebRTC.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4693DC571FE7B7E100A5DF39 /* WebRTC.framework */; };
+		4693DC5D1FE7B85C00A5DF39 /* Rainbow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4693DC581FE7B7E200A5DF39 /* Rainbow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4693DC5E1FE7B85C00A5DF39 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4693DC571FE7B7E100A5DF39 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		86A6EA95E0174E6DFF4F5264 /* libPods-RainbowSampleProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ECACCDBA951FA836E3BAEB /* libPods-RainbowSampleProject.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4602B0031FE6B1C200C79166 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4693DC5D1FE7B85C00A5DF39 /* Rainbow.framework in Embed Frameworks */,
+				4693DC5E1FE7B85C00A5DF39 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		315DB849B17AD71B35CD50AD /* Pods-RainbowSampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowSampleProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainbowSampleProject/Pods-RainbowSampleProject.release.xcconfig"; sourceTree = "<group>"; };
+		4601CE251FE70B160002B861 /* ConversationDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversationDetailsViewController.h; sourceTree = "<group>"; };
+		4601CE271FE70B160002B861 /* ConversationDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationDetailsViewController.xib; sourceTree = "<group>"; };
+		4602AFB61FE651F600C79166 /* RainbowSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4602AFB91FE651F600C79166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4602AFBA1FE651F600C79166 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4602AFBC1FE651F600C79166 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4602AFBD1FE651F600C79166 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4602AFC01FE651F600C79166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4602AFC21FE651F600C79166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4602AFC51FE651F600C79166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4602AFC71FE651F600C79166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4602AFC81FE651F600C79166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4602AFD31FE652C900C79166 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		4602AFD41FE652C900C79166 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		4602AFDC1FE6532000C79166 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		4602AFDD1FE6532000C79166 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		4602AFDE1FE6532000C79166 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		4602AFE21FE6533600C79166 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
+		4602AFE31FE6533600C79166 /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
+		4602AFE41FE6533600C79166 /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
+		4602AFE71FE6535200C79166 /* ConversationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationsViewController.m; sourceTree = "<group>"; };
+		4602AFE81FE6535300C79166 /* ConversationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationsViewController.h; sourceTree = "<group>"; };
+		4602AFE91FE6535300C79166 /* ConversationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversationsViewController.xib; sourceTree = "<group>"; };
+		4602AFED1FE6577400C79166 /* icons8-contacts-filled-51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-contacts-filled-51.png"; sourceTree = "<group>"; };
+		4602AFF01FE664B200C79166 /* ConversationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversationTableViewCell.h; sourceTree = "<group>"; };
+		4602AFF11FE664B200C79166 /* ConversationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConversationTableViewCell.m; sourceTree = "<group>"; };
+		4602AFF21FE664B200C79166 /* ConversationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationTableViewCell.xib; sourceTree = "<group>"; };
+		4602B00B1FE6BB1700C79166 /* ContactDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
+		4602B00C1FE6BB1700C79166 /* ContactDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
+		4602B00D1FE6BB1700C79166 /* ContactDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailsViewController.xib; sourceTree = "<group>"; };
+		46080FF81FE90CB3000AE568 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		464C9FEB1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationDetailsViewController.m; sourceTree = "<group>"; };
+		4693DC571FE7B7E100A5DF39 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		4693DC581FE7B7E200A5DF39 /* Rainbow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rainbow.framework; sourceTree = "<group>"; };
+		B3AC2D252FA0B84094428588 /* Pods-RainbowSampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowSampleProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainbowSampleProject/Pods-RainbowSampleProject.debug.xcconfig"; sourceTree = "<group>"; };
+		E9ECACCDBA951FA836E3BAEB /* libPods-RainbowSampleProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RainbowSampleProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4602AFB31FE651F600C79166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4693DC591FE7B7E300A5DF39 /* WebRTC.framework in Frameworks */,
+				4693DC5A1FE7B7E300A5DF39 /* Rainbow.framework in Frameworks */,
+				86A6EA95E0174E6DFF4F5264 /* libPods-RainbowSampleProject.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		297861E748E98B8C112DA0E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3AC2D252FA0B84094428588 /* Pods-RainbowSampleProject.debug.xcconfig */,
+				315DB849B17AD71B35CD50AD /* Pods-RainbowSampleProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F0A1005B9E204CD9D168C2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9ECACCDBA951FA836E3BAEB /* libPods-RainbowSampleProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4601CE241FE70AC40002B861 /* ConversationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				464C9FEB1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m */,
+				4601CE251FE70B160002B861 /* ConversationDetailsViewController.h */,
+				4601CE271FE70B160002B861 /* ConversationDetailsViewController.xib */,
+			);
+			path = ConversationDetails;
+			sourceTree = "<group>";
+		};
+		4602AFAD1FE651F600C79166 = {
+			isa = PBXGroup;
+			children = (
+				4602AFB81FE651F600C79166 /* RainbowSampleProject */,
+				4602AFB71FE651F600C79166 /* Products */,
+				2F0A1005B9E204CD9D168C2E /* Frameworks */,
+				297861E748E98B8C112DA0E5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4602AFB71FE651F600C79166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4602AFB61FE651F600C79166 /* RainbowSampleProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4602AFB81FE651F600C79166 /* RainbowSampleProject */ = {
+			isa = PBXGroup;
+			children = (
+				4693DC581FE7B7E200A5DF39 /* Rainbow.framework */,
+				4693DC571FE7B7E100A5DF39 /* WebRTC.framework */,
+				4602AFEC1FE6536500C79166 /* New Group */,
+				4602AFDB1FE6531100C79166 /* Conversations */,
+				4602AFDA1FE6530A00C79166 /* Contacts */,
+				4602AFC21FE651F600C79166 /* Assets.xcassets */,
+				4602AFED1FE6577400C79166 /* icons8-contacts-filled-51.png */,
+				4602AFC41FE651F600C79166 /* LaunchScreen.storyboard */,
+				4602AFC71FE651F600C79166 /* Info.plist */,
+				4602AFC81FE651F600C79166 /* main.m */,
+				46080FF81FE90CB3000AE568 /* Constants.h */,
+			);
+			path = RainbowSampleProject;
+			sourceTree = "<group>";
+		};
+		4602AFDA1FE6530A00C79166 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				4602B00A1FE6BACE00C79166 /* ContactDetails */,
+				4602AFE11FE6532700C79166 /* ContactsCells */,
+				4602AFDE1FE6532000C79166 /* ContactsViewController.h */,
+				4602AFDD1FE6532000C79166 /* ContactsViewController.m */,
+				4602AFDC1FE6532000C79166 /* ContactsViewController.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		4602AFDB1FE6531100C79166 /* Conversations */ = {
+			isa = PBXGroup;
+			children = (
+				4601CE241FE70AC40002B861 /* ConversationDetails */,
+				4602AFEF1FE6647500C79166 /* ConversationsCells */,
+				4602AFE81FE6535300C79166 /* ConversationsViewController.h */,
+				4602AFE71FE6535200C79166 /* ConversationsViewController.m */,
+				4602AFE91FE6535300C79166 /* ConversationsViewController.xib */,
+			);
+			path = Conversations;
+			sourceTree = "<group>";
+		};
+		4602AFE11FE6532700C79166 /* ContactsCells */ = {
+			isa = PBXGroup;
+			children = (
+				4602AFE21FE6533600C79166 /* ContactsTableViewCell.h */,
+				4602AFE31FE6533600C79166 /* ContactsTableViewCell.m */,
+				4602AFE41FE6533600C79166 /* ContactsTableViewCell.xib */,
+			);
+			path = ContactsCells;
+			sourceTree = "<group>";
+		};
+		4602AFEC1FE6536500C79166 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4602AFD41FE652C900C79166 /* TabBarController.h */,
+				4602AFD31FE652C900C79166 /* TabBarController.m */,
+				4602AFB91FE651F600C79166 /* AppDelegate.h */,
+				4602AFBA1FE651F600C79166 /* AppDelegate.m */,
+				4602AFBC1FE651F600C79166 /* ViewController.h */,
+				4602AFBD1FE651F600C79166 /* ViewController.m */,
+				4602AFBF1FE651F600C79166 /* Main.storyboard */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4602AFEF1FE6647500C79166 /* ConversationsCells */ = {
+			isa = PBXGroup;
+			children = (
+				4602AFF01FE664B200C79166 /* ConversationTableViewCell.h */,
+				4602AFF11FE664B200C79166 /* ConversationTableViewCell.m */,
+				4602AFF21FE664B200C79166 /* ConversationTableViewCell.xib */,
+			);
+			path = ConversationsCells;
+			sourceTree = "<group>";
+		};
+		4602B00A1FE6BACE00C79166 /* ContactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4602B00B1FE6BB1700C79166 /* ContactDetailsViewController.h */,
+				4602B00C1FE6BB1700C79166 /* ContactDetailsViewController.m */,
+				4602B00D1FE6BB1700C79166 /* ContactDetailsViewController.xib */,
+			);
+			path = ContactDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4602AFB51FE651F600C79166 /* RainbowSampleProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4602AFCC1FE651F600C79166 /* Build configuration list for PBXNativeTarget "RainbowSampleProject" */;
+			buildPhases = (
+				9979003EF5B7248CA0DB9A07 /* [CP] Check Pods Manifest.lock */,
+				4602AFB21FE651F600C79166 /* Sources */,
+				4602AFB31FE651F600C79166 /* Frameworks */,
+				4602AFB41FE651F600C79166 /* Resources */,
+				4602B0031FE6B1C200C79166 /* Embed Frameworks */,
+				57BE03C3592C8E63392D6540 /* [CP] Embed Pods Frameworks */,
+				8EF57110A26FD208F19D3117 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainbowSampleProject;
+			productName = RainbowSampleProject;
+			productReference = 4602AFB61FE651F600C79166 /* RainbowSampleProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4602AFAE1FE651F600C79166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = AsalTech;
+				TargetAttributes = {
+					4602AFB51FE651F600C79166 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4602AFB11FE651F600C79166 /* Build configuration list for PBXProject "RainbowSampleProject" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4602AFAD1FE651F600C79166;
+			productRefGroup = 4602AFB71FE651F600C79166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4602AFB51FE651F600C79166 /* RainbowSampleProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4602AFB41FE651F600C79166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4693DC5B1FE7B81D00A5DF39 /* Rainbow.framework in Resources */,
+				4693DC5C1FE7B81D00A5DF39 /* WebRTC.framework in Resources */,
+				4602AFC61FE651F600C79166 /* LaunchScreen.storyboard in Resources */,
+				4602AFEE1FE6577400C79166 /* icons8-contacts-filled-51.png in Resources */,
+				4602AFDF1FE6532000C79166 /* ContactsViewController.xib in Resources */,
+				4602AFC31FE651F600C79166 /* Assets.xcassets in Resources */,
+				4602AFF41FE664B200C79166 /* ConversationTableViewCell.xib in Resources */,
+				4602B00F1FE6BB1700C79166 /* ContactDetailsViewController.xib in Resources */,
+				4601CE291FE70B160002B861 /* ConversationDetailsViewController.xib in Resources */,
+				4602AFEB1FE6535300C79166 /* ConversationsViewController.xib in Resources */,
+				4602AFC11FE651F600C79166 /* Main.storyboard in Resources */,
+				4602AFE61FE6533600C79166 /* ContactsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57BE03C3592C8E63392D6540 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainbowSampleProject/Pods-RainbowSampleProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF57110A26FD208F19D3117 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RainbowSampleProject/Pods-RainbowSampleProject-resources.sh",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/JSQMessagesAssets.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RainbowSampleProject/Pods-RainbowSampleProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9979003EF5B7248CA0DB9A07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainbowSampleProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4602AFB21FE651F600C79166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4602AFEA1FE6535300C79166 /* ConversationsViewController.m in Sources */,
+				4602AFBE1FE651F600C79166 /* ViewController.m in Sources */,
+				4602AFD51FE652C900C79166 /* TabBarController.m in Sources */,
+				4602AFE01FE6532000C79166 /* ContactsViewController.m in Sources */,
+				4602B00E1FE6BB1700C79166 /* ContactDetailsViewController.m in Sources */,
+				4602AFF31FE664B200C79166 /* ConversationTableViewCell.m in Sources */,
+				4602AFC91FE651F600C79166 /* main.m in Sources */,
+				4602AFE51FE6533600C79166 /* ContactsTableViewCell.m in Sources */,
+				464C9FEC1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m in Sources */,
+				4602AFBB1FE651F600C79166 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4602AFBF1FE651F600C79166 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4602AFC01FE651F600C79166 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4602AFC41FE651F600C79166 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4602AFC51FE651F600C79166 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4602AFCA1FE651F600C79166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4602AFCB1FE651F600C79166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4602AFCD1FE651F600C79166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3AC2D252FA0B84094428588 /* Pods-RainbowSampleProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RainbowSampleProject",
+				);
+				INFOPLIST_FILE = RainbowSampleProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asaltech.RainbowSampleProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4602AFCE1FE651F600C79166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315DB849B17AD71B35CD50AD /* Pods-RainbowSampleProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RainbowSampleProject",
+				);
+				INFOPLIST_FILE = RainbowSampleProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asaltech.RainbowSampleProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4602AFB11FE651F600C79166 /* Build configuration list for PBXProject "RainbowSampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4602AFCA1FE651F600C79166 /* Debug */,
+				4602AFCB1FE651F600C79166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4602AFCC1FE651F600C79166 /* Build configuration list for PBXNativeTarget "RainbowSampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4602AFCD1FE651F600C79166 /* Debug */,
+				4602AFCE1FE651F600C79166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4602AFAE1FE651F600C79166 /* Project object */;
+}
