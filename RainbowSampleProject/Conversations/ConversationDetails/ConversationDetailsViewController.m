@@ -23,7 +23,7 @@ UIImage* image;
 
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad];//comment
     currentUser = [[ServicesManager sharedInstance] myUser];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationController.navigationBar
