@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *contactImageView;
 @property (weak, nonatomic) IBOutlet UILabel *contactNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *senderLabel;
-@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 -(void) initWithConversationInfo :(Conversation *)conversationObj;

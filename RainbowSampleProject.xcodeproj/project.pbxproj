@@ -125,8 +125,8 @@
 		4601CE241FE70AC40002B861 /* ConversationDetails */ = {
 			isa = PBXGroup;
 			children = (
-				464C9FEB1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m */,
 				4601CE251FE70B160002B861 /* ConversationDetailsViewController.h */,
+				464C9FEB1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m */,
 				4601CE271FE70B160002B861 /* ConversationDetailsViewController.xib */,
 			);
 			path = ConversationDetails;

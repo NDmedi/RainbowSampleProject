@@ -15,7 +15,6 @@
 @synthesize contactNameLabel=_contactNameLabel;
 @synthesize statusLabel=_statusLabel;
 @synthesize dateLabel=_dateLabel;
-@synthesize messageLabel=_messageLabel;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -55,14 +54,21 @@
         self.contactNameLabel.text=[conversation.peer displayName ];
         [self.statusLabel setHidden:YES];
     }
+    
+    if(conversation.unreadMessagesCount) {
+        self.senderLabel.font = [UIFont boldSystemFontOfSize:10.0];
+    }
+    else {
+        self.senderLabel.font = [UIFont systemFontOfSize:10.0];
+        
+    }
+    
     NSDateFormatter *dateFormatter1 = [[NSDateFormatter alloc] init];
     [dateFormatter1 setDateFormat:@"dd/MM/yyy"];
     self.dateLabel.text=[dateFormatter1 stringFromDate:[conversation.lastMessage date]];
     self.senderLabel.text=[conversation.lastMessage body];
-    NSLog(@"messageBody %@",[conversation.lastMessage body]);
-    //change status labelColor
-   
 }
+
 -(void)changeStausColor:(long)contactPresence{
     switch (contactPresence) {
         case 0:

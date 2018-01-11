@@ -11,27 +11,27 @@
 #import "ConversationDetails/ConversationDetailsViewController.h"
 #import "Rainbow/Rainbow.h"
   
-@interface ConversationsViewController () <UITableViewDataSource ,UITableViewDelegate,UISearchBarDelegate>
+@interface ConversationsViewController () <UITableViewDataSource ,UITableViewDelegate,UISearchBarDelegate>{
+    BOOL searchEnabled;
+    NSMutableArray *tableDataSearchArray;
+    NSArray<Conversation *> *conversationsArray;
+    UISearchBar *searchBar;
+}
 
 @end
 
 @implementation ConversationsViewController
-NSArray *contactNames;
-NSArray *contactStatus;
-UISearchBar *searchBar;
-BOOL searchEnabled;
-NSArray *tableDataSearchArray;
-NSArray<Conversation *> *conversationsArray;
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUp];
     
 }
+
 -(void)setUp {
-    // Do any additional setup after loading the view from its nib.
-    contactNames = [NSArray arrayWithObjects:@"Contact1", @"Contact2", @"Contact3", @"Contact4", @"Contact5", @"Contact6",  nil];
-    contactStatus = [NSArray arrayWithObjects:@"Offline", @"Offline", @"Offline", @"Online", @"Online", @"Online", nil];
+    
     tableDataSearchArray=[NSMutableArray array];
     
     // Add serchbar to Navigationbar
@@ -41,58 +41,52 @@ NSArray<Conversation *> *conversationsArray;
     searchBar.tintColor = [UIColor whiteColor];
     self.navigationItem.titleView = searchBar;
     self.definesPresentationContext = YES;
-   conversationsArray = [ServicesManager sharedInstance].conversationsManagerService.conversations;
-   /* for(int i=0 ; i<[conversationsArray count] ; i++){
-    if([[conversationsArray objectAtIndex:i].peer isKindOfClass:[Contact class]]){
-        Contact *contact=(Contact *)[conversationsArray objectAtIndex:i].peer;
-        NSLog(@"contactInfo %@",[ contact fullName]);
-    };
-    }*/
-
+    conversationsArray = [ServicesManager sharedInstance].conversationsManagerService.conversations;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveNewMessage:) name:kConversationsManagerDidReceiveNewMessageForConversation object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdateConversation:) name:kConversationsManagerDidUpdateConversation object:nil];
+    
 }
+- (void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // TODO:  change this, instead use notifications ..
+    long noOfUnreadMsgs=[ServicesManager sharedInstance].conversationsManagerService.totalNbOfUnreadMessagesInAllConversations;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if(noOfUnreadMsgs!=0)
+            [[self navigationController] tabBarItem].badgeValue = [NSString stringWithFormat:@"%ld",noOfUnreadMsgs];
+        else
+             [[self navigationController] tabBarItem].badgeValue = nil;
+        // this is to update conversation when back from chat ..
+        [self.conversationsTableView reloadData];
+    });
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(void)regiesterNotifications {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdateConversation:) name:kConversationsManagerDidUpdateConversation object:nil];
-
-}
--(void) didUpdateConversation:(NSNotification *) notification {
-    //Conversation * updatedConversation = (Conversation *)notification.object
-    
-}
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
+#pragma mark - tableView Delgates and dataSource
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
     static NSString *simpleTableIdentifier = @"ConversationTableViewCell";
-    Conversation *conversationObj;
-
-    NSLog(@"indexPath : %li",(long)indexPath.row);
+    
     ConversationTableViewCell *cell = (ConversationTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
         [tableView registerNib:[UINib nibWithNibName:@"ConversationTableViewCell" bundle:nil] forCellReuseIdentifier:simpleTableIdentifier];
         cell= [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     }
-   
+    
+    Conversation *conversationObj;
+    
     if(searchEnabled) {
         conversationObj = [tableDataSearchArray objectAtIndex:indexPath.row];
      }
     else {
         conversationObj = [conversationsArray objectAtIndex:indexPath.row];
     }
-    //fill data
+       
     [cell initWithConversationInfo:conversationObj];
     return cell;
 }
@@ -100,7 +94,6 @@ NSArray<Conversation *> *conversationsArray;
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(searchEnabled) {
         return [tableDataSearchArray count];
-
     }
     else {
         return [conversationsArray count];
@@ -110,15 +103,12 @@ NSArray<Conversation *> *conversationsArray;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"CellHeight %li",indexPath.row);
     return 64.0;
-    // This is just Programatic method you can also do that by xib !
+   
 }
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
     ConversationDetailsViewController * newView = [[ConversationDetailsViewController alloc] initWithNibName:@"ConversationDetailsViewController" bundle:nil];
     newView.conversation=[conversationsArray objectAtIndex:indexPath.row];
     newView.hidesBottomBarWhenPushed = YES;
@@ -126,6 +116,7 @@ NSArray<Conversation *> *conversationsArray;
     
 }
 #pragma mark - SearchBar delegates
+
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     if (searchBar.text.length == 0) {
@@ -139,15 +130,42 @@ NSArray<Conversation *> *conversationsArray;
         
     }
 }
+
 - (void)filterContentForSearchText:(NSString*)searchText
 {
-    
-    NSPredicate *resultPredicate = [NSPredicate
-                                    predicateWithFormat:@"self.peer.displayName CONTAINS %@",
-                                    searchText];
-    
-    tableDataSearchArray = [conversationsArray filteredArrayUsingPredicate:resultPredicate];
-    [self.conversationsTableView reloadData];
+    tableDataSearchArray = [NSMutableArray arrayWithArray:conversationsArray];
+    [tableDataSearchArray filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(Conversation * evaluatedObject, NSDictionary *bindings) {
+        
+        if ([evaluatedObject.peer isKindOfClass:[Contact class]]) {
+            Contact * contact = (Contact *) evaluatedObject.peer;
+            return [contact.fullName localizedCaseInsensitiveContainsString:searchBar.text];
+        }
+        return [evaluatedObject.peer.displayName localizedCaseInsensitiveContainsString:searchBar.text];
+    }]];
+    dispatch_async(dispatch_get_main_queue(), ^{
+         [self.conversationsTableView reloadData];
+    });
 }
 
+#pragma mark - RecieveNewMessage Notification
+
+- (void) didReceiveNewMessage : (NSNotification *) notification {
+    long noOfUnreadMsgs=[ServicesManager sharedInstance].conversationsManagerService.totalNbOfUnreadMessagesInAllConversations;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if(noOfUnreadMsgs!=0){
+             [[self navigationController] tabBarItem].badgeValue = [NSString stringWithFormat:@"%ld",noOfUnreadMsgs];
+        }
+        else
+            [[self navigationController] tabBarItem].badgeValue = nil;
+        [self.conversationsTableView reloadData];
+    });
+}
+
+-(void) didUpdateConversation:(NSNotification *) notification {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.conversationsTableView reloadData];
+    });
+    
+}
 @end

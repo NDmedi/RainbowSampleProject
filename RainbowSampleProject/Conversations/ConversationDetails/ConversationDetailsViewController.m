@@ -445,8 +445,15 @@ UIImage* image;
                     customMsg=[self getJSQMessage:message withUserId:[contact jid]
                                                           withDisplayName:[contact fullName]];
                 }
-                [self.messages insertObject:customMsg atIndex:i];
+                
             }
+            else if ([[message peer] isKindOfClass:[Room class]]) {
+                Peer* peer=(Peer*)[message peer];
+                customMsg=[self getJSQMessage:message withUserId:[peer jid]
+                              withDisplayName:[peer displayName]];
+                
+            }
+            [self.messages insertObject:customMsg atIndex:i];
         }
     
     dispatch_async(dispatch_get_main_queue(), ^{
