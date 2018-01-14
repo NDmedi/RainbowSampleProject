@@ -16,7 +16,7 @@
 @synthesize testLabel=_testLabel;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.testLabel.text=_testTxt;
+    self.testLabel.text=self.testTxt;
     // Do any additional setup after loading the view from its nib.
 }
 

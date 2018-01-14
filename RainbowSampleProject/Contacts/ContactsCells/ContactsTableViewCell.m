@@ -31,8 +31,8 @@
     self.coloredLabel.clipsToBounds = YES;
     self.coloredLabel.layer.borderWidth = 1.0f;
     self.coloredLabel.layer.borderColor = WHITE.CGColor;
-    UIImage *imgDetails = [UIImage imageNamed:@"userdetails-icon"];
-    [self.detailsButton setImage:imgDetails forState:UIControlStateNormal];
+    
+
     
 }
 
@@ -42,6 +42,7 @@
 }
 
 - (void) initWithContactInfo :(Contact *)contact {
+    UIImage *imgDetails;
     Presence *contactPresence=[contact presence];
     self.contactNameLabel.text=[contact fullName];
     self.contactStatusLabel.text=[contactPresence status];
@@ -51,7 +52,30 @@
     else {
         [self.contactImageView setImage:[UIImage imageNamed:@"avator"]];
     }
-    
+
+    //set contact-details icon
+    if(contact.isRainbowUser) {
+     if(contact.isInRoster) {
+        imgDetails = [UIImage imageNamed:@"userdetails-icon"];
+        [self.detailsButton setAccessibilityIdentifier:[NSString stringWithFormat:@"%@",@"userdetails-icon"]];
+         }
+        else {
+            if(contact.sentInvitation.status ==InvitationStatusPending) {
+                imgDetails = [UIImage imageNamed:@"invitation_sent_icon"];
+                [self.detailsButton setAccessibilityIdentifier:[NSString stringWithFormat:@"%@",@"invitation_sent_icon"]];
+            }
+            else{
+                imgDetails = [UIImage imageNamed:@"addcontacts-icon"];
+                [self.detailsButton setAccessibilityIdentifier:[NSString stringWithFormat:@"%@",@"addcontacts-icon"]];
+            }
+          }
+       }
+   else {
+      imgDetails = [UIImage imageNamed:@"phone_contacts_icon"];
+      [self.detailsButton setAccessibilityIdentifier:[NSString stringWithFormat:@"%@",@"phone_contacts_icon"]];
+    }
+    [self.detailsButton setImage:imgDetails forState:UIControlStateNormal];
+
     //set labelcolor and status according to recieved contact object
     switch ((long)contact.presence.presence) {
         case 0:

@@ -24,6 +24,7 @@
     UISearchBar *searchBar;
     BOOL searchEnabled;
     NSArray *tableDataSearchArray;
+    long selectedRow;
 }
 
 #pragma mark - Application lifeCycle
@@ -39,7 +40,6 @@
     [[ServicesManager sharedInstance].loginManager setUsername:@"ndmedi@asaltech.com" andPassword:@"No@ra123"];
     [[ServicesManager sharedInstance].loginManager connect];
     [[ServicesManager sharedInstance].contactsManagerService requestAddressBookAccess];
-
     [self registerNotifications];
 
     [self setup];
@@ -66,6 +66,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLogin:) name:kLoginManagerDidLoginSucceeded object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getContacts:) name:kContactsManagerServiceDidAddContact object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdateContact:) name: kContactsManagerServiceDidUpdateContact object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didInviteContact:) name: kContactsManagerServiceDidInviteContact object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didFailedInviteContact:) name: kContactsManagerServiceDidFailedToInviteContact object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -135,6 +138,10 @@
     else
     return [contactsArray count];
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Invite: selectedRow: %ld",indexPath.row);
+    selectedRow=indexPath.row;
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -180,25 +187,36 @@
 
 - (IBAction)moveToDetails:(UIButton *)sender
 {
-    NSInteger rowOfTheCell = sender.tag;
-    NSLog(@"rowofthecell %ld", (long)rowOfTheCell);
-   // ContactDetailsViewController * newView = [[ContactDetailsViewController alloc] initWithNibName:@"ContactDetailsViewController" bundle:nil];
+    NSLog(@"Invite: selectedContact %ld",sender.tag);
+    Contact* selectedContact=[contactsArray objectAtIndex:sender.tag];
+
+    if(selectedContact.isRainbowUser) {
+        if(selectedContact.isInRoster) {
+            ContactDetailsViewController * newView = [[ContactDetailsViewController alloc] initWithNibName:@"ContactDetailsViewController" bundle:nil];
+            newView.testLabel.text= [NSString stringWithFormat:@"Pressed Row is %ld",sender.tag];
+            [self.navigationController pushViewController:newView animated:YES];
+        }
+        else {
+            if(selectedContact.sentInvitation.status ==InvitationStatusPending) {
+               //nothing to do or resend invitation again
+            }
+            else{
+                [[ServicesManager sharedInstance].contactsManagerService inviteContact:selectedContact];
+            }
+        }
+    }
+    else {
+        if([selectedContact hasPhoneNumberOfType:PhoneNumberTypeWork]){
+        PhoneNumber* phoneNO = [selectedContact getPhoneNumberOfType:PhoneNumberTypeWork];
+        [[ServicesManager sharedInstance].contactsManagerService inviteContact:selectedContact withPhoneNumber:phoneNO.number withCompletionHandler:^(Invitation *invitation) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.contactsTableView reloadData];
+            });
+        }];
+        }
+    }
     
-//    newView.testTxt= [NSString stringWithFormat:@"Pressed Row is %ld",(long)rowOfTheCell];
-//    // New line
-//    [self.navigationController pushViewController:newView animated:YES];
-    //open camera  store image
-    @try {
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    //picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    [self presentViewController:picker animated:YES completion:NULL];
-    }
-    @catch (NSException * e) {
-        NSLog(@"Exception: %@", e);
-    }
+  
 }
 
 #pragma mark - imagePicker Methods
@@ -209,6 +227,20 @@
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
+}
+#pragma mark - invitations Methods
+-(void)didInviteContact :(NSNotification *) notification  {
+    NSLog(@"Invite: Invitation sent successfully");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.contactsTableView reloadData];
+    });
+}
+-(void)didFailedInviteContact :(NSNotification *) notification  {
+    NSLog(@"Invite: Invitation Failed");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.contactsTableView reloadData];
+    });
+
 }
  @end
  
