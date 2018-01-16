@@ -9,6 +9,7 @@
 #import "ContactsViewController.h"
 #import "ContactsCells/ContactsTableViewCell.h"
 #import "ContactDetails/ContactDetailsViewController.h"
+#import "LoginViewController.h"
 #import "Rainbow/Rainbow.h"
 @interface ContactsViewController() <UITableViewDataSource ,
                                         UITableViewDelegate,UIImagePickerControllerDelegate,
@@ -35,12 +36,13 @@
   
     contactsArray = [NSMutableArray array];
     tableDataSearchArray=[NSMutableArray array];
+     [self registerNotifications];
     
-    //[[ServicesManager sharedInstance].loginManager setUsername:@"abzour@asaltech.com" andPassword:@"Asal@123"];
     [[ServicesManager sharedInstance].loginManager setUsername:@"ndmedi@asaltech.com" andPassword:@"No@ra123"];
     [[ServicesManager sharedInstance].loginManager connect];
     [[ServicesManager sharedInstance].contactsManagerService requestAddressBookAccess];
-    [self registerNotifications];
+    MyUser* currentUser=[[ServicesManager sharedInstance] myUser];
+    NSLog(@"currentUser name %@",[currentUser username]);
 
     [self setup];
 
@@ -63,12 +65,13 @@
     
 }
 -(void)registerNotifications {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLogin:) name:kLoginManagerDidLoginSucceeded object:nil];
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLoginSucceed:) name: kLoginManagerDidLoginSucceeded object:nil];
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLoginFailed:) name: kLoginManagerDidFailedToAuthenticate object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getContacts:) name:kContactsManagerServiceDidAddContact object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdateContact:) name: kContactsManagerServiceDidUpdateContact object:nil];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didInviteContact:) name: kContactsManagerServiceDidInviteContact object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didFailedInviteContact:) name: kContactsManagerServiceDidFailedToInviteContact object:nil];
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,8 +80,11 @@
 }
 
 
--(void) didLogin:(NSNotification *) notification {
-    NSLog(@"DID LOGIN ");
+-(void) didLoginSucceed:(NSNotification *) notification {
+    NSLog(@"login: Success");
+}
+-(void) didLoginFailed:(NSNotification *) notification {
+    NSLog(@"login: Failed");
 }
 
 -(void) getContacts:(NSNotification *) notification {
@@ -193,7 +199,7 @@
     if(selectedContact.isRainbowUser) {
         if(selectedContact.isInRoster) {
             ContactDetailsViewController * newView = [[ContactDetailsViewController alloc] initWithNibName:@"ContactDetailsViewController" bundle:nil];
-            newView.testLabel.text= [NSString stringWithFormat:@"Pressed Row is %ld",sender.tag];
+            //newView.testLabel.text= [NSString stringWithFormat:@"Pressed Row is %ld",sender.tag];
             [self.navigationController pushViewController:newView animated:YES];
         }
         else {

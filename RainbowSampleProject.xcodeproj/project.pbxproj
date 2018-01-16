@@ -26,7 +26,14 @@
 		4602AFF41FE664B200C79166 /* ConversationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4602AFF21FE664B200C79166 /* ConversationTableViewCell.xib */; };
 		4602B00E1FE6BB1700C79166 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602B00C1FE6BB1700C79166 /* ContactDetailsViewController.m */; };
 		4602B00F1FE6BB1700C79166 /* ContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4602B00D1FE6BB1700C79166 /* ContactDetailsViewController.xib */; };
+		4618D3C8200C98320066521E /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4618D3C7200C98310066521E /* background1.jpg */; };
+		4618D3CD200CA0D90066521E /* ARBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618D3CA200CA0D80066521E /* ARBasicAnimation.m */; };
+		4618D3CE200CA0D90066521E /* ARTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618D3CC200CA0D90066521E /* ARTransitionAnimator.m */; };
 		464C9FEC1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464C9FEB1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m */; };
+		465441E4200BA0B1008A6EE6 /* APSpinLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465441E0200BA0B0008A6EE6 /* APSpinLayer.m */; };
+		465441E5200BA0B1008A6EE6 /* APLoadingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 465441E2200BA0B1008A6EE6 /* APLoadingButton.m */; };
+		465441E9200BA1EE008A6EE6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 465441E7200BA1EE008A6EE6 /* LoginViewController.m */; };
+		465441EA200BA1EE008A6EE6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465441E8200BA1EE008A6EE6 /* LoginViewController.xib */; };
 		4693DC591FE7B7E300A5DF39 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4693DC571FE7B7E100A5DF39 /* WebRTC.framework */; };
 		4693DC5A1FE7B7E300A5DF39 /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4693DC581FE7B7E200A5DF39 /* Rainbow.framework */; };
 		4693DC5B1FE7B81D00A5DF39 /* Rainbow.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4693DC581FE7B7E200A5DF39 /* Rainbow.framework */; };
@@ -84,7 +91,19 @@
 		4602B00C1FE6BB1700C79166 /* ContactDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
 		4602B00D1FE6BB1700C79166 /* ContactDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailsViewController.xib; sourceTree = "<group>"; };
 		46080FF81FE90CB3000AE568 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4618D3C7200C98310066521E /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background1.jpg; sourceTree = "<group>"; };
+		4618D3C9200CA0D80066521E /* ARBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBasicAnimation.h; sourceTree = "<group>"; };
+		4618D3CA200CA0D80066521E /* ARBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARBasicAnimation.m; sourceTree = "<group>"; };
+		4618D3CB200CA0D90066521E /* ARTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTransitionAnimator.h; sourceTree = "<group>"; };
+		4618D3CC200CA0D90066521E /* ARTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTransitionAnimator.m; sourceTree = "<group>"; };
 		464C9FEB1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationDetailsViewController.m; sourceTree = "<group>"; };
+		465441E0200BA0B0008A6EE6 /* APSpinLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSpinLayer.m; sourceTree = "<group>"; };
+		465441E1200BA0B1008A6EE6 /* APLoadingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLoadingButton.h; sourceTree = "<group>"; };
+		465441E2200BA0B1008A6EE6 /* APLoadingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLoadingButton.m; sourceTree = "<group>"; };
+		465441E3200BA0B1008A6EE6 /* APSpinLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSpinLayer.h; sourceTree = "<group>"; };
+		465441E6200BA1EE008A6EE6 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		465441E7200BA1EE008A6EE6 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		465441E8200BA1EE008A6EE6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4693DC571FE7B7E100A5DF39 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
 		4693DC581FE7B7E200A5DF39 /* Rainbow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rainbow.framework; sourceTree = "<group>"; };
 		B3AC2D252FA0B84094428588 /* Pods-RainbowSampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowSampleProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainbowSampleProject/Pods-RainbowSampleProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +172,7 @@
 		4602AFB81FE651F600C79166 /* RainbowSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				465441DF200BA04F008A6EE6 /* LoginFiles */,
 				4693DC581FE7B7E200A5DF39 /* Rainbow.framework */,
 				4693DC571FE7B7E100A5DF39 /* WebRTC.framework */,
 				4602AFEC1FE6536500C79166 /* New Group */,
@@ -160,6 +180,7 @@
 				4602AFDA1FE6530A00C79166 /* Contacts */,
 				4602AFC21FE651F600C79166 /* Assets.xcassets */,
 				4602AFED1FE6577400C79166 /* icons8-contacts-filled-51.png */,
+				4618D3C7200C98310066521E /* background1.jpg */,
 				4602AFC41FE651F600C79166 /* LaunchScreen.storyboard */,
 				4602AFC71FE651F600C79166 /* Info.plist */,
 				4602AFC81FE651F600C79166 /* main.m */,
@@ -236,6 +257,24 @@
 			path = ContactDetails;
 			sourceTree = "<group>";
 		};
+		465441DF200BA04F008A6EE6 /* LoginFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4618D3C9200CA0D80066521E /* ARBasicAnimation.h */,
+				4618D3CA200CA0D80066521E /* ARBasicAnimation.m */,
+				4618D3CB200CA0D90066521E /* ARTransitionAnimator.h */,
+				4618D3CC200CA0D90066521E /* ARTransitionAnimator.m */,
+				465441E1200BA0B1008A6EE6 /* APLoadingButton.h */,
+				465441E2200BA0B1008A6EE6 /* APLoadingButton.m */,
+				465441E3200BA0B1008A6EE6 /* APSpinLayer.h */,
+				465441E0200BA0B0008A6EE6 /* APSpinLayer.m */,
+				465441E6200BA1EE008A6EE6 /* LoginViewController.h */,
+				465441E7200BA1EE008A6EE6 /* LoginViewController.m */,
+				465441E8200BA1EE008A6EE6 /* LoginViewController.xib */,
+			);
+			path = LoginFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,9 +343,11 @@
 				4602AFEE1FE6577400C79166 /* icons8-contacts-filled-51.png in Resources */,
 				4602AFDF1FE6532000C79166 /* ContactsViewController.xib in Resources */,
 				4602AFC31FE651F600C79166 /* Assets.xcassets in Resources */,
+				4618D3C8200C98320066521E /* background1.jpg in Resources */,
 				4602AFF41FE664B200C79166 /* ConversationTableViewCell.xib in Resources */,
 				4602B00F1FE6BB1700C79166 /* ContactDetailsViewController.xib in Resources */,
 				4601CE291FE70B160002B861 /* ConversationDetailsViewController.xib in Resources */,
+				465441EA200BA1EE008A6EE6 /* LoginViewController.xib in Resources */,
 				4602AFEB1FE6535300C79166 /* ConversationsViewController.xib in Resources */,
 				4602AFC11FE651F600C79166 /* Main.storyboard in Resources */,
 				4602AFE61FE6533600C79166 /* ContactsTableViewCell.xib in Resources */,
@@ -381,15 +422,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4602AFEA1FE6535300C79166 /* ConversationsViewController.m in Sources */,
+				465441E4200BA0B1008A6EE6 /* APSpinLayer.m in Sources */,
+				465441E9200BA1EE008A6EE6 /* LoginViewController.m in Sources */,
 				4602AFBE1FE651F600C79166 /* ViewController.m in Sources */,
+				4618D3CE200CA0D90066521E /* ARTransitionAnimator.m in Sources */,
 				4602AFD51FE652C900C79166 /* TabBarController.m in Sources */,
 				4602AFE01FE6532000C79166 /* ContactsViewController.m in Sources */,
+				4618D3CD200CA0D90066521E /* ARBasicAnimation.m in Sources */,
 				4602B00E1FE6BB1700C79166 /* ContactDetailsViewController.m in Sources */,
 				4602AFF31FE664B200C79166 /* ConversationTableViewCell.m in Sources */,
 				4602AFC91FE651F600C79166 /* main.m in Sources */,
 				4602AFE51FE6533600C79166 /* ContactsTableViewCell.m in Sources */,
 				464C9FEC1FFE2ABB00E3CFEF /* ConversationDetailsViewController.m in Sources */,
 				4602AFBB1FE651F600C79166 /* AppDelegate.m in Sources */,
+				465441E5200BA0B1008A6EE6 /* APLoadingButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

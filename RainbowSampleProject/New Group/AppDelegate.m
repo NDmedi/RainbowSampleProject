@@ -10,6 +10,8 @@
 #import "Constants.h"
 #import "ContactsViewController.h"
 #import "ConversationsViewController.h"
+#import "LoginViewController.h"
+#import "Rainbow/Rainbow.h"
 
 
 @interface AppDelegate ()
@@ -25,8 +27,18 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[self setupTabbarController]];
-    
+   // self.navigationController = [[UINavigationController alloc] initWithRootViewController:[self setupTabbarController]];
+   // LoginViewController* loginView=[[LoginViewController alloc]init];
+   // self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginView];
+    MyUser*  currentUser=[ServicesManager sharedInstance].myUser;
+    if(!currentUser.username) {
+        LoginViewController* loginView=[[LoginViewController alloc]init];
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginView];
+    }
+    else {
+        self.navigationController = [[UINavigationController alloc] initWithRootViewController:[self setupTabbarController]];
+
+    }
     self.navigationController.navigationBarHidden = YES;
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
